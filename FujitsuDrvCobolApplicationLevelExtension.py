@@ -50,8 +50,10 @@ class FujitsuDrvCobolApplicationLevelExtension(ApplicationLevelExtension):
         
         logging.info('Final SQL Processing...')
         kb.execute_query(sqlq.get_sql_update1_create_links_table())
-        kb.execute_query(sqlq.get_sql_update2_create_links_table())
-        kb.execute_query(sqlq.get_sql_update3_create_links_table())
+        kb.execute_query(sqlq.get_sql_update21_create_links_table())
+        kb.execute_query(sqlq.get_sql_update22_create_links_table())
+        kb.execute_query(sqlq.get_sql_update31_create_links_table())
+        kb.execute_query(sqlq.get_sql_update32_create_links_table())
         
         logging.info('Creating links...')
         application.update_cast_knowledge_base("Create links between Cobol Data items", """        
